@@ -2,16 +2,24 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work Order</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  display: block;
+}
+</style>
 </head>
 <body>
 
+<img src="work-order_page.jpg" alt="Work Order Page">
+
 <script>
 window.onload = function() {
-    const w = window.open("work-order.pdf");
-    setTimeout(() => {
-        if (w) w.print();
-    }, 1500);
+  window.print();
 };
 </script>
 
